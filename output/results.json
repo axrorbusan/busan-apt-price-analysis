@@ -1,0 +1,62 @@
+{
+  "n_trades": 151757,
+  "n_complexes": 4261,
+  "period": [
+    "2021-01",
+    "2026-09"
+  ],
+  "model_A": {
+    "r2": 0.5088485241486698,
+    "adj_r2": 0.5085927110287356,
+    "n": 151757,
+    "morans_I": 0.44239777977850725,
+    "morans_p": 0.002
+  },
+  "model_B": {
+    "r2": 0.6219510681123155,
+    "adj_r2": 0.6217167536525467,
+    "n": 151757,
+    "morans_I": 0.38523903061727804,
+    "morans_p": 0.002
+  },
+  "derived_B": {
+    "age_turning_point_years": 33.494679296492926,
+    "coast_distance_doubling_pct": -7.971398689574382,
+    "cbd_distance_doubling_pct": -4.994179991777581,
+    "area_doubling_pct": 17.94507955786213,
+    "per_floor_pct": 0.8900805247796573,
+    "elem_within_300m_pct": 8.492415276352983
+  },
+  "index_change_pct": {
+    "same_complex": -5.596656792309929,
+    "hedonic": 16.59422184477623,
+    "peak_month_same_complex": "2021-11",
+    "peak_same_complex": 114.43116738182657
+  },
+  "holdout": {
+    "train_until": "2025-07",
+    "n_train": 112036,
+    "n_test": 39721,
+    "ols": {
+      "r2": 0.6356277684238313,
+      "median_abs_pct_error": 0.21683643799256624
+    },
+    "gbm": {
+      "r2": 0.9368581551579529,
+      "median_abs_pct_error": 0.0810526101565272
+    }
+  },
+  "gbm_importance": {
+    "age": 0.7375822023026868,
+    "dist_centum": 0.46050748064913494,
+    "dist_coast": 0.19474436545040338,
+    "dist_station": 0.13291453200132713,
+    "lon": 0.09094467636680362,
+    "dist_seomyeon": 0.0806508123425493,
+    "lat": 0.07517699221645706,
+    "log_area": 0.06443410039381688,
+    "dist_elem": 0.03796989846823142,
+    "floor_c": 0.01917037069119838,
+    "t": 0.0
+  }
+}

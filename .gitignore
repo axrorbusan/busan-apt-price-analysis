@@ -1,0 +1,7 @@
+keys.txt
+__pycache__/
+*.pyc
+.DS_Store
+_preview/
+data/processed/trades_clean.parquet
+data/processed/trades_features.parquet
